@@ -1,0 +1,268 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+
+body{
+  background-color: hsl(270, 20%, 96%);
+}
+
+.phone{
+  background-color: white;
+  border-radius: 3rem;
+  padding: 1rem;
+  overflow: hidden;
+  margin: 3rem auto;
+  filter: drop-shadow(hsla(0, 0%, 0%, .08) 0 .2rem .2rem);
+  min-width: 17.5rem;
+  max-width: 17.5rem;
+}
+
+.screen{
+  border-radius: 2rem;
+  background-color: hsl(270, 20%, 96%);
+  overflow: hidden;
+}
+
+.heading{
+  background-image: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 0 .5rem .5rem;
+  padding: 0 1rem .7rem;
+  gap: 1rem;
+  color: hsl(276, 100%, 81%);
+}
+
+.speaker{
+  height: 1rem;
+  align-self: center;
+  background-color: white;
+  border-radius: 0 0 .7rem .7rem;
+  width: 60%;
+}
+
+.user-info{
+  display: grid;
+  grid-template-columns: .7rem 1.7rem auto 2rem;
+  grid-template-rows: 1rem .7rem;
+  column-gap: .5rem;
+}
+
+.user-info>*{
+  align-self: center;
+}
+
+.back-arrow{
+  grid-row: span 2;
+}
+
+.back-arrow img, .three-dots img{
+  height: 1rem;
+}
+
+.user-pic{
+  grid-row: span 2;
+  width: 1.7rem;
+  height: 1.7rem;
+  align-content: center;
+}
+
+.user-pic img{
+  border-radius: 50%;
+  width: 100%;
+  border: hsl(276, 100%, 81%) solid .1rem;
+}
+
+.user-name{
+  font-weight: 700;
+  font-size: .8rem;
+  align-self: flex-start;
+}
+
+.available{
+  font-weight: 400;
+  font-size: .5rem;
+  align-self: flex-end;
+}
+
+.three-dots{
+  grid-row: span 2;
+  justify-self: flex-end;
+}
+
+.texts{
+  display: flex;
+  flex-direction: column;
+  padding: .8rem;
+  gap: .8rem;
+}
+
+.texts p{
+  font-size: .5rem;
+  font-weight: 400;
+}
+
+.text{
+  padding: .4rem;
+  filter: drop-shadow(hsla(0, 0%, 0%, .08) 0 .2rem .2rem);
+}
+
+.received{
+  background-color: hsl(276, 100%, 93%);
+  color: hsl(276, 55%, 52%);
+  max-width: 60%;
+  border-radius: .5rem .5rem .5rem .1rem;
+}
+
+.sent-pics{
+  display: flex;
+  flex-direction: row;
+  gap: .4rem;
+  justify-content: flex-end;
+}
+
+.sent-pics>img{
+  width: 2.5rem;
+  border-radius: .5rem;
+}
+
+.sent{
+  max-width: 60%;
+  border-radius: .5rem .5rem .1rem .5rem;
+  color: black;
+  align-self: flex-end;
+  background-color: white;
+}
+
+.offer{
+  max-width: 70%;
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  align-items: center;
+  background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  color: hsl(276, 100%, 90%);
+  border-radius: .5rem .5rem .5rem .1rem;
+}
+
+.selector{
+  width: .7rem;
+  height: .7rem;
+  display: flex;
+}
+
+.cost{
+  margin-left: auto;
+  margin-right: .7rem;
+}
+
+.cost p{
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.respond{
+  background-color: white;
+  padding: .25rem .3rem .25rem 1.2rem ;
+  margin: 0 1rem 1rem;
+  height: 2.5rem;
+  border-radius: 999vw;
+  display: flex;
+  flex-direction: row;
+  color: hsl(206, 6%, 79%);
+  font-size: .5rem;
+  font-weight: 400;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.respond img{
+  height: 90%;
+}
+
+.info{
+  text-align: center;
+  margin: 0 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+h1{
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: hsl(271, 36%, 24%);
+}
+
+.info p{
+  color: hsl(270, 7%, 64%);
+  line-height: 1.7;
+}
+
+.bg-shape1{
+  background-image: linear-gradient(to top, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 45vw;
+  height: 50vh;
+  border-radius: 0 0 50% 0%;
+}
+
+.bg-shape2{
+  visibility: hidden;
+}
+
+@media screen and (min-width:767px) {
+
+  main{
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+    align-items: center;
+    margin: 3rem auto auto;
+    gap:3rem;
+    width: 69.5vw;
+    max-width: 65rem;
+  }
+
+  .info{
+    max-width: 45%;
+    text-align: left;
+  }
+
+  .phone{
+    margin-right: 0;
+  }
+
+  .bg-shape1{
+    border-radius: 0 0 999vw 999vw;
+    width: 31.5vw;
+    height: 86vh;
+  }
+
+  .bg-shape2{
+    visibility: visible;
+    background-color: hsla(276, 100%, 90%, .1);
+    z-index: -2;
+    position: fixed;
+    bottom: 0;
+    right: -8.5rem;
+    width: 31.5vw;
+    height: 85vh;
+    border-radius: 999vw 999vw 0 0;
+  }
+  
+}
